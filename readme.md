@@ -40,7 +40,7 @@ download the correct version matching with your python version and 32 or 64
 
 -download : https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib
 
-terminal, and change directory to your the file that you downloaded. and run the commend below.
+terminal, and change directory to the file where you downloaded. and run the commend below.
 
 ```
 pip install {name of the file}
