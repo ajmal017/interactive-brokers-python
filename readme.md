@@ -58,5 +58,5 @@ TA-Lib: https://mrjbq7.github.io/ta-lib/doc_index.html
 
 ib_insync: https://ib-insync.readthedocs.io/notebooks.html
 
-# Unrelated Reasearch
+# Unrelated Topic
 python path solution: https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
