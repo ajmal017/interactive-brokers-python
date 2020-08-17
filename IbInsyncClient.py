@@ -1,5 +1,5 @@
 from ib_insync import *
-from rnd.Rsi import Rsi
+from studies.RelativeStrengthIndex import RelativeStrengthIndex as rsi
 
 ib = IB()
 ib.connect('127.0.0.1', 7497, clientId=8888) #client set in TWS
@@ -22,8 +22,8 @@ def ReqData(contract):
     return ib.reqHistoricalData(
         contract,
         endDateTime='',
-        durationStr='30 D',
-        barSizeSetting='2 hours',
+        durationStr='1 D',
+        barSizeSetting='1 min',
         whatToShow='TRADES',
         useRTH=True,
         formatDate=1)
@@ -35,11 +35,13 @@ def ReqData(contract):
 if __name__ == "__main__":
     #stock : stock, exchange, currency
     contract = Stock('AAPL', 'SMART', 'USD')
-    marketOrder = MarketOrder('SELL', 200)
+    # marketOrder = MarketOrder('SELL', 200)
     bars = ReqData(contract)
     df = util.df(bars)
     print(df)
-    attr=[o.close for o in bars]
-    Rsi.reqRsi(attr)
-    # print(attr)
+    df_close = df["close"].values
+    df_date = df["date"].values
+    rsi.reqRsi(df_close, df_date)
+    # rsi.reqAvgGan(df_close)
+
 
