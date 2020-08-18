@@ -1,3 +1,7 @@
+# Diagram (still in development)
+
+![Alt text](/IbTWSClassDiagram.png "Optional Title")
+
 # Research & Development
 
 ## 08/13/2020
@@ -39,6 +43,11 @@ pd.set_option('display.max_rows', None)
 
 ### Numpy
 It is a better fast easier way to deal with array. it capables to handle big data set.
+`
+## 08/18/2020
+---
+### development
+-drawing the application structure class diagram
 
 
 
