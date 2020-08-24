@@ -13,8 +13,8 @@ def qualifyContracts(contract):
     print(detail)
 
 #MarketOrder place order market price
-def placeOrder(contract, order):
-    marketTrade = ib.placeOrder(contract, marketOrder)
+def placeMarketOrder(contract, order):
+    marketTrade = ib.placeOrder(contract, order)
     print(marketTrade)
 
 

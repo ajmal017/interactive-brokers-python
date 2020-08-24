@@ -1,21 +1,29 @@
 # Diagram (still in development)
 
-![Alt text](/IbTWSClassDiagram.png "Optional Title")
+![Alt text](/diagram/IbTWSClassDiagram.png "Optional Title")
 
 # Research & Development
 
-## 08/13/2020
----
-### IB Insync research 
-- able to buy and sell 
-- able to request HistoricalData
-- contract detail
+## 08/24/2020
 
-### TA-lib research
-- RSI indicator
+### Development
+- all order function are asynchronous
+- update on Order.py
+- update on Portfolio
+
+### Python library
+- Threading vs Asyncio vs multiprocessing
+
+if I contiune using IB_insync to develop, I will not be able to use other async library? if I use threading and Asyncio, I am worry I will run into issue. I will stick with asyncio with ib insync for now. Order.py work perfectly with multiple asynchronous submission. Portfolio.py are pretty straight forward, I probably beautifying the data for the coming next push. 
+
+### Coming Up
+- beautifying 
+- BOL study
+- build a strategy
+- probably missed something but will added back to here
 
 ## 08/17/2020
----
+
 ### TA-Lab research
 - Relative Strength Index 
 
@@ -44,10 +52,25 @@ pd.set_option('display.max_rows', None)
 ### Numpy
 It is a better fast easier way to deal with array. it capables to handle big data set.
 `
+
+
 ## 08/18/2020
----
+
 ### development
 -drawing the application structure class diagram
+
+
+## 08/13/2020
+
+### IB Insync research 
+- able to buy and sell 
+- able to request HistoricalData
+- contract detail
+
+### TA-lib research
+- RSI indicator
+
+
 
 
 
